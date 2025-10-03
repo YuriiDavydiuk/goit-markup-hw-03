@@ -139,7 +139,7 @@ img {
   padding-bottom: 120px;
 }
 
-.hero-container {
+.hero-title-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -245,7 +245,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 32px;
+  
 }
 
 .team-member {
@@ -284,10 +284,16 @@ img {
   padding-bottom: 120px;
 }
 
-.team-list {
-  
+.portfolio-title {
+  margin-bottom: 72px;
 }
 
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+  justify-content: space-around;
+}
 
 .portfolio-name {
   font-weight: 500;
