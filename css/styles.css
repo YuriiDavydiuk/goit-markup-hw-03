@@ -77,7 +77,7 @@ img {
 
 /* #region header */
 
-.header-container {
+.container-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -135,8 +135,25 @@ img {
 /* #region section 1 hero */
 
 .hero {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
   background-color: #2e2f42;
   color: #ffffff;
+}
+
+.hero-title-wrapper {
+  width: 496px;
+  margin-bottom: 48px;
 }
 
 .hero-title {
@@ -155,6 +172,9 @@ img {
   background-color: #4d5ae5;
   color: #ffffff;
   cursor: pointer;
+  width: 169px;
+  border-radius: 4px;
+  padding: 16px 32px;
 }
 
 .hero-button:hover,
@@ -170,6 +190,11 @@ img {
 
 /* #region section 2 values */
 
+.values {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -181,6 +206,10 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.values-list {
+  display: flex;
 }
 
 .values-subtitle {
@@ -197,6 +226,8 @@ img {
 
 .team {
   background-color: #f4f4fd;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .team-title {
@@ -207,10 +238,23 @@ img {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
+}
+
+.team-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
 }
 
 .team-member {
   background-color: #ffffff;
+  border-radius: 0 0 4px 4px;
+  padding-block: 0px 32px;
+  padding-inline: 0px;
+  width: 305px;
+  height: 380px;
 }
 
 .team-name {
@@ -234,6 +278,16 @@ img {
 /* #endregion */
 
 /* #region section4 portfolio */
+
+.portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.team-list {
+  
+}
+
 
 .portfolio-name {
   font-weight: 500;
