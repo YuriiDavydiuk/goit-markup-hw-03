@@ -1,19 +1,4 @@
-/* #region reset */
-
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-:root {
-  scroll-behavior: smooth;
-}
-/* #endregion */
-
-/* #region global */
+/* #region body */
 
 body {
   font-family: "Roboto", sans-serif;
@@ -25,14 +10,52 @@ body {
   background-color: #ffffff;
 }
 
-a {
-  color: currentColor;
-  text-decoration: none;
+/* #endregion */
+
+/* #region reset */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+address {
+  font-style: normal;
+}
+img {
+  display: block;
+}
+.container {
+  max-width: 1158px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 /* #endregion */
@@ -54,11 +77,26 @@ ol {
 
 /* #region header */
 
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
 .header-logo-text {
   color: #2e2f42;
 }
 
 .header-menu {
+  display: flex;
+  gap: 40px;
   font-weight: 500;
   color: #2e2f42;
 }
@@ -77,6 +115,11 @@ ol {
 
 .header-contacts {
   font-style: normal;
+}
+
+.header-contacts-list {
+  display: flex;
+  gap: 40px;
 }
 
 .header-contacts-link {
@@ -123,14 +166,21 @@ ol {
   background-color: #404bbf;
 }
 
-.header-contacts-list {
-}
-
 /* #endregion */
 
 /* #region section 2 values */
 
-.values-list {
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .values-subtitle {
@@ -148,8 +198,7 @@ ol {
 .team {
   background-color: #f4f4fd;
 }
-.team-list {
-}
+
 .team-title {
   font-weight: 700;
   font-size: 36px;
@@ -170,9 +219,6 @@ ol {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-}
-
-.portfolio-list {
 }
 
 .portfolio-title {

@@ -13,48 +13,54 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
+
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
     <header class="header">
-      <nav class="header-nav">
-        <!-- left: logo -->
-        <a class="header-logo" href="./index.html"
-          >Web<span class="header-logo-text">Studio</span></a
-        >
+      <div class="header-container">
+        <nav class="header-nav">
+          <!-- left: logo -->
+          <a class="header-logo" href="./index.html"
+            >Web<span class="header-logo-text">Studio</span></a
+          >
 
-        <!-- center: main menu-->
-        <ul class="header-menu">
-          <li class="header-menu-item">
-            <a class="header-menu-link" href="./index.html">Studio</a>
-          </li>
-          <li class="header-menu-item">
-            <a class="header-menu-link" href="">Portfolio</a>
-          </li>
-          <li class="header-menu-item">
-            <a class="header-menu-link" href="">Contacts</a>
-          </li>
-        </ul>
-      </nav>
+          <!-- center: main menu-->
+          <ul class="header-menu">
+            <li class="header-menu-item">
+              <a class="header-menu-link" href="./index.html">Studio</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-link" href="">Portfolio</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
 
-      <!-- right: contacts -->
-      <address class="header-contacts">
-        <ul class="header-contacts-list">
-          <li class="header-contacts-item">
-            <a class="header-contacts-link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="header-contacts-item">
-            <a class="header-contacts-link" href="tel:+110001111111"
-              >+11 (000) 111-11-11</a
-            >
-          </li>
-        </ul>
-      </address>
+        <!-- right: contacts -->
+        <address class="header-contacts">
+          <ul class="header-contacts-list">
+            <li class="header-contacts-item">
+              <a class="header-contacts-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="header-contacts-item">
+              <a class="header-contacts-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </header>
 
     <main class="main">
@@ -66,7 +72,7 @@
 
       <!-- section 2 -->
       <section class="values">
-        <h2 class="values-title" hidden>Core Values of Our Company</h2>
+        <h2 class="visually-hidden">Core Values of Our Company</h2>
         <ul class="values-list">
           <li class="values-item">
             <h3 class="values-subtitle">Strategy</h3>
