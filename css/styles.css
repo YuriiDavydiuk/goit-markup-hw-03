@@ -36,26 +36,23 @@ ol {
   margin: 0;
   padding: 0;
 }
+
 a {
   text-decoration: none;
   color: currentColor;
 }
+
 button {
   font-family: inherit;
   cursor: pointer;
 }
+
 address {
   font-style: normal;
 }
+
 img {
   display: block;
-}
-.container {
-  max-width: 1158px;
-  padding-left: 0px;
-  padding-right: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
 }
 
 /* #endregion */
@@ -73,21 +70,33 @@ img {
   color: #4d5ae5;
 }
 
+.container {
+  width: 1440px;
+  padding: 120px 156px;
+  margin: 0 auto;
+}
+
 /* #endregion */
 
 /* #region header */
 
-.container-wrapper {
+.header-conteiner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 20px 0;
+  padding: 24px 156px;
+  margin: 0 auto;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .header-nav {
   display: flex;
   align-items: center;
-  gap: 40px;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  margin-right: 76px;
 }
 
 .header-logo-text {
@@ -96,12 +105,16 @@ img {
 
 .header-menu {
   display: flex;
+  align-items: center;
+  width: 261px;
   gap: 40px;
   font-weight: 500;
   color: #2e2f42;
+  margin-right: 300px;
 }
 
 .header-menu-link {
+  display: block;
   font-weight: 500;
   color: #2e2f42;
 }
@@ -119,6 +132,7 @@ img {
 
 .header-contacts-list {
   display: flex;
+  align-items: center;
   gap: 40px;
 }
 
@@ -137,23 +151,14 @@ img {
 .hero {
   padding-top: 120px;
   padding-bottom: 120px;
-}
-
-.hero-title-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero {
   background-color: #2e2f42;
   color: #ffffff;
 }
 
-.hero-title-wrapper {
-  width: 496px;
-  margin-bottom: 48px;
+.hero-container {
+  width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .hero-title {
@@ -162,6 +167,15 @@ img {
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: 48px;
+  width: 496px;
+}
+.hero-button-wrapper {
+  display: flex;
+  justify-content: center;
 }
 
 .hero-button {
@@ -172,9 +186,11 @@ img {
   background-color: #4d5ae5;
   color: #ffffff;
   cursor: pointer;
-  width: 169px;
   border-radius: 4px;
   padding: 16px 32px;
+  min-width: 169px;
+  min-height: 56px;
+  border-radius: 4px;
 }
 
 .hero-button:hover,
@@ -210,6 +226,12 @@ img {
 
 .values-list {
   display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.values-item {
+  width: 264px;
 }
 
 .values-subtitle {
@@ -218,6 +240,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 /* #endregion */
@@ -245,7 +268,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  
+  gap: 32px;
 }
 
 .team-member {
@@ -253,7 +276,7 @@ img {
   border-radius: 0 0 4px 4px;
   padding-block: 0px 32px;
   padding-inline: 0px;
-  width: 305px;
+  width: 264;
   height: 380px;
 }
 
@@ -263,7 +286,21 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
+  text-align: center;
 }
+
+.team-photo {
+  margin-bottom: 32px;
+}
+.team-position {
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+/* #endregion */
+
+/* #region section4 portfolio */
 
 .portfolio-title {
   font-weight: 700;
@@ -275,15 +312,6 @@ img {
   color: #2e2f42;
 }
 
-/* #endregion */
-
-/* #region section4 portfolio */
-
-.portfolio {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-
 .portfolio-title {
   margin-bottom: 72px;
 }
@@ -292,10 +320,20 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 48px 24px;
-  justify-content: space-around;
 }
 
+.portfolio-image {
+  margin-bottom: 32px;
+}
+
+.portfolio-item {
+  width: 360px;
+  height: 420px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
 .portfolio-name {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -303,9 +341,22 @@ img {
   color: #2e2f42;
 }
 
+.portfolio-name,
+.portfolio-category {
+  margin-left: 8px;
+}
+
 /* #endregion */
 
 /* #region footer */
+
+.container.header-conteiner {
+  display: flex;
+  align-items: center;
+  padding: 100px 1020px 100px 156px;
+  margin: 0 auto;
+}
+
 .footer {
   background-color: #2e2f42;
 }
@@ -315,9 +366,11 @@ img {
 }
 
 .footer-text {
+  margin-top: 16px;
   font-size: 16px;
   line-height: 1.5;
   color: #f4f4fd;
+  width: 264px;
 }
 
 /* #endregion */
