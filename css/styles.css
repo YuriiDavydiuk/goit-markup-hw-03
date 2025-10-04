@@ -116,7 +116,7 @@ img {
   padding: 24px 0;
 }
 
-.header-menu-item {
+.header-menu-link {
   padding: 24px 0;
 }
 
@@ -389,7 +389,7 @@ img {
   background-color: #2e2f42;
 }
 
-.footer-logo {
+.a {
   display: inline-block;
   margin-bottom: 16px;
 }
