@@ -389,13 +389,12 @@ img {
   background-color: #2e2f42;
 }
 
-.footer-logo {
+a.footer-logo {
   display: inline-block;
   margin-bottom: 16px;
 }
 
 .footer-logo-text {
-  display: inline-block;
   color: #f4f4fd;
 }
 
