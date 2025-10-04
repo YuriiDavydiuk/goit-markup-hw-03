@@ -84,7 +84,7 @@ img {
   border-bottom: 1px solid #e7e9fc;
 }
 
-.container {
+.container.header {
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -379,25 +379,14 @@ img {
   padding-bottom: 100px;
 }
 
-.container.wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
 .footer {
   background-color: #2e2f42;
 }
 
-.footer-decorative-element {
+.footer-logo {
   display: inline-block;
   margin-bottom: 16px;
 }
-
-/*a.footer-logo {
-  display: inline-block;
-  margin-bottom: 16px;
-} */
 
 .footer-logo-text {
   color: #f4f4fd;
