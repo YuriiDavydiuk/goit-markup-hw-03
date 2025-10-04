@@ -14,12 +14,6 @@ body {
 
 /* #region reset */
 
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-}
-
 h1,
 h2,
 h3,
@@ -43,8 +37,9 @@ a {
 }
 
 button {
-  font-family: inherit;
   cursor: pointer;
+  border: none;
+  padding: 0;
 }
 
 address {
@@ -53,6 +48,8 @@ address {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* #endregion */
@@ -76,6 +73,11 @@ img {
   margin: 0 auto;
 }
 
+a:active {
+  color: #4b5ae5;
+  text-decoration: underline;
+}
+
 /* #endregion */
 
 /* #region header */
@@ -87,20 +89,19 @@ img {
 .container.header {
   display: flex;
   align-items: center;
-  flex-direction: row;
 }
 
 .header-nav {
   display: flex;
   align-items: center;
+  flex-grow: 1;
 }
 
 .header-logo {
   display: flex;
   align-items: center;
-  margin-right: 76px;
+  flex-grow: 1;
 }
-
 .header-logo-text {
   color: #2e2f42;
 }
@@ -401,8 +402,3 @@ img {
 }
 
 /* #endregion */
-
-a:active {
-  color: #4b5ae5;
-  text-decoration: underline;
-}
