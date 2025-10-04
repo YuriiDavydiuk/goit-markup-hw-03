@@ -71,8 +71,8 @@ img {
 }
 
 .container {
-  width: 1440px;
-  padding: 120px 156px;
+  width: 1158px;
+  padding: 0 15px 0 15px;
   margin: 0 auto;
 }
 
@@ -80,12 +80,14 @@ img {
 
 /* #region header */
 
-.header-conteiner {
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.container {
   display: flex;
   align-items: center;
-  padding: 24px 156px;
-  margin: 0 auto;
-  border-bottom: 1px solid #e7e9fc;
+  flex-direction: row;
 }
 
 .header-nav {
@@ -110,7 +112,8 @@ img {
   gap: 40px;
   font-weight: 500;
   color: #2e2f42;
-  margin-right: 300px;
+  margin-right: 332px;
+  padding: 24px 0;
 }
 
 .header-menu-link {
@@ -149,16 +152,16 @@ img {
 /* #region section 1 hero */
 
 .hero {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 188px;
+  padding-bottom: 188px;
   background-color: #2e2f42;
   color: #ffffff;
 }
 
-.hero-container {
-  width: 1440px;
-  margin-right: auto;
-  margin-left: auto;
+.container-hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .hero-title {
@@ -171,11 +174,7 @@ img {
   margin-left: auto;
   margin-top: auto;
   margin-bottom: 48px;
-  width: 496px;
-}
-.hero-button-wrapper {
-  display: flex;
-  justify-content: center;
+  max-width: 496px;
 }
 
 .hero-button {
@@ -189,8 +188,8 @@ img {
   border-radius: 4px;
   padding: 16px 32px;
   min-width: 169px;
-  min-height: 56px;
-  border-radius: 4px;
+  height: 56px;
+  display: block;
 }
 
 .hero-button:hover,
@@ -247,6 +246,12 @@ img {
 
 /* #region section 3 team */
 
+.container-team {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .team {
   background-color: #f4f4fd;
   padding-top: 120px;
@@ -268,7 +273,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 32px;
+  gap: 24px;
 }
 
 .team-member {
@@ -290,9 +295,10 @@ img {
   text-align: center;
 }
 
-.team-photo {
-  margin-bottom: 32px;
+.team-name-wrapper {
+  padding: 32px 0;
 }
+
 .team-position {
   margin-bottom: 8px;
   text-align: center;
@@ -301,7 +307,19 @@ img {
 /* #endregion */
 
 /* #region section4 portfolio */
+.portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 
+.container-portfolio {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 1158px;
+  padding: 0 15px 0 15px;
+  margin: 0 auto;
+}
 .portfolio-title {
   font-weight: 700;
   font-size: 36px;
@@ -329,9 +347,14 @@ img {
 .portfolio-item {
   width: 360px;
   height: 420px;
+}
+
+.portfolio-item-text {
+  padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
 }
+
 .portfolio-name {
   margin-bottom: 8px;
   font-weight: 500;
@@ -350,11 +373,17 @@ img {
 
 /* #region footer */
 
-.container.header-conteiner {
+.footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.container-footer {
   display: flex;
   align-items: center;
-  padding: 100px 1020px 100px 156px;
-  margin: 0 auto;
+  flex-direction: column;
+  width: 1158px;
+  padding: 0 15px 0 15px;
 }
 
 .footer {
