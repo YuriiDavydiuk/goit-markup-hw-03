@@ -395,6 +395,7 @@ img {
 }
 
 .footer-logo-text {
+  display: inline-block;
   color: #f4f4fd;
 }
 
