@@ -97,8 +97,7 @@ a:active {
 }
 
 .header-logo {
-  margin-right: calc((100% - 76px) / 9);
-  /*margin-right: 76px;*/
+  margin-right: 76px;
 }
 .header-logo-text {
   color: #2e2f42;
