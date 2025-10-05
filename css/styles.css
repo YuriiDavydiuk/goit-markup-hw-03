@@ -86,7 +86,7 @@ a:active {
   border-bottom: 1px solid #e7e9fc;
 }
 
-.container.header {
+.container.header-container {
   display: flex;
   align-items: center;
 }
@@ -98,9 +98,7 @@ a:active {
 }
 
 .header-logo {
-  display: flex;
-  align-items: center;
-  flex-grow: 1;
+  margin-right: 76px;
 }
 .header-logo-text {
   color: #2e2f42;
@@ -109,12 +107,9 @@ a:active {
 .header-menu {
   display: flex;
   align-items: center;
-  width: 261px;
   gap: 40px;
   font-weight: 500;
   color: #2e2f42;
-  margin-right: 332px;
-  padding: 24px 0;
 }
 
 .header-menu-link {
@@ -162,11 +157,6 @@ a:active {
   background-color: #2e2f42;
   color: #ffffff;
 }
-.container.hero {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
 
 .hero-title {
   font-weight: 700;
@@ -195,6 +185,7 @@ a:active {
   height: 56px;
   display: block;
   border: none;
+  margin: 0 auto;
 }
 
 .hero-button:hover,
@@ -251,12 +242,6 @@ a:active {
 
 /* #region section 3 team */
 
-.container.team {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
 .team {
   background-color: #f4f4fd;
   padding-top: 120px;
@@ -284,10 +269,7 @@ a:active {
 .team-member {
   background-color: #ffffff;
   border-radius: 0 0 4px 4px;
-  padding-block: 0px 32px;
-  padding-inline: 0px;
-  width: 264;
-  height: 380px;
+  width: 264px;
 }
 
 .team-name {
@@ -305,7 +287,6 @@ a:active {
 }
 
 .team-position {
-  margin-bottom: 8px;
   text-align: center;
 }
 
@@ -317,11 +298,6 @@ a:active {
   padding-bottom: 120px;
 }
 
-.container.portfolio {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
 .portfolio-title {
   font-weight: 700;
   font-size: 36px;
@@ -342,13 +318,8 @@ a:active {
   gap: 48px 24px;
 }
 
-.portfolio-image {
-  margin-bottom: 32px;
-}
-
 .portfolio-item {
   width: 360px;
-  height: 420px;
 }
 
 .portfolio-item-text {
@@ -366,11 +337,6 @@ a:active {
   color: #2e2f42;
 }
 
-.portfolio-name,
-.portfolio-category {
-  margin-left: 8px;
-}
-
 /* #endregion */
 
 /* #region footer */
@@ -378,9 +344,6 @@ a:active {
 .footer {
   padding-top: 100px;
   padding-bottom: 100px;
-}
-
-.footer {
   background-color: #2e2f42;
 }
 
@@ -394,11 +357,10 @@ a:active {
 }
 
 .footer-text {
-  margin-top: 16px;
   font-size: 16px;
   line-height: 1.5;
   color: #f4f4fd;
-  width: 264px;
+  max-width: 264px;
 }
 
 /* #endregion */
