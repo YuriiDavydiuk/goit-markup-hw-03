@@ -81,8 +81,7 @@ a:active {
 /* #endregion */
 
 /* #region header */
-
-.header {
+. .header {
   border-bottom: 1px solid #e7e9fc;
 }
 
@@ -98,7 +97,8 @@ a:active {
 }
 
 .header-logo {
-  margin-right: 76px;
+  margin-right: calc((100% - 76px) / 9);
+  /*margin-right: 76px;*/
 }
 .header-logo-text {
   color: #2e2f42;
@@ -226,7 +226,8 @@ a:active {
 }
 
 .values-item {
-  width: 264px;
+  width: calc((100% - 24px * 3) / 4);
+  /*width: 264px; */
 }
 
 .values-subtitle {
@@ -269,7 +270,8 @@ a:active {
 .team-member {
   background-color: #ffffff;
   border-radius: 0 0 4px 4px;
-  width: 264px;
+  width: calc((100% - 16px * 3) / 4);
+  /*width: 264px;*/
 }
 
 .team-name {
@@ -319,7 +321,8 @@ a:active {
 }
 
 .portfolio-item {
-  width: 360px;
+  width: calc((100% - 24px * 2) / 3);
+  /*width: 360px; */
 }
 
 .portfolio-item-text {
